@@ -1,12 +1,10 @@
 import java.util.Scanner;
 import java.util.Random;
 
-//TEST COMMIT 2
-
 public class Zoo{
 
   public static void main(String[] args){
-
+      //declare
       String direction;
       String snakeDirection;
       Scanner input = new Scanner(System.in);
@@ -16,19 +14,16 @@ public class Zoo{
 
 
       while (snakemove.getx() != rabbitmove.getx() || snakemove.gety() != rabbitmove.gety()){
+        //snake move
+        System.out.println("enter direction for snake");
+        direction = input.nextLine();
+        snakemove.moveunit(direction);
+        //rabbit random move
+        System.out.println("rabbitmove");
+        int n = rand.nextInt(4) + 1;
+        snakeDirection = rabbitmove.convertarray(n);
+        rabbitmove.moveunit(snakeDirection);
 
-      System.out.println("enter direction for snake");
-      direction = input.nextLine();
-      snakemove.moveunit(direction);
-
-      System.out.println("rabbitmove");
-      int n = rand.nextInt(4) + 1;
-      snakeDirection = rabbitmove.convertarray(n);
-      rabbitmove.moveunit(snakeDirection);
-
-      }
-
-
-
+       }
    }
 }
