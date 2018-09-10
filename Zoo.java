@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.Random;
 
+//TEST COMMIT 2
+
 public class Zoo{
 
   public static void main(String[] args){
@@ -23,7 +25,7 @@ public class Zoo{
       int n = rand.nextInt(4) + 1;
       snakeDirection = rabbitmove.convertarray(n);
       rabbitmove.moveunit(snakeDirection);
-      
+
       }
 
 
