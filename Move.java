@@ -52,7 +52,7 @@ public class Move{
       direction = newDirection;
 
     }else if (newDirection.equals("right")){
-      System.out.print("ryk h�jre, ");
+      System.out.print("ryk hoejre, ");
       x = (x + 1 + 10) % 10;
       System.out.println("staar i " + x + "," + y);
       direction = newDirection;
