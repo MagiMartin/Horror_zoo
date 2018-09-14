@@ -4,7 +4,7 @@ import java.lang.Math;
 
 public class Zoo{
 
-   //declare
+   //declare variables
    private static int xcheck;
    private static int ycheck;
    private static int n;

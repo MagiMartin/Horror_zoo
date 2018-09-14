@@ -1,6 +1,6 @@
 public class Animal{
 
-  //Declare variable
+  //Declare variables
   private int x;
   private int y;
   private String convertDirection;
