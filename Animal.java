@@ -18,7 +18,7 @@ public class Animal{
   public int gety(){
     return y;
   }
-  //converter rabbit move int til string
+  //converter rabbit move fra random int til string
   public String convertarray(int n){
 
     String[] rabbitstring = {"left","right","up","down"};

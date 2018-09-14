@@ -18,7 +18,7 @@ public class Zoo{
       Animal rabbitmove = new Animal(9,9);
       Random rand = new Random();
 
-
+      //while loop to keepr program runnning
       while (snakemove.getx() != rabbitmove.getx() || snakemove.gety() != rabbitmove.gety()){
         //snake move
         System.out.println("enter direction for snake");
@@ -30,6 +30,7 @@ public class Zoo{
         convertDirection = rabbitmove.convertarray(n);
         rabbitmove.moveunit(convertDirection);
 
+        //check if rabbit is close to being eaten
         xcheck = Math.abs(snakemove.getx() - rabbitmove.getx());
         ycheck = Math.abs(snakemove.gety() - rabbitmove.gety());
 
