@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Random;
 import java.lang.Math;
 
 public class Zoo{
@@ -7,7 +6,6 @@ public class Zoo{
    //declare variables
    private static int xcheck;
    private static int ycheck;
-   private static int n;
    private static String direction;
    private static String convertDirection;
 
@@ -16,27 +14,32 @@ public class Zoo{
       Scanner input = new Scanner(System.in);
       Animal snakemove = new Animal(0,0);
       Animal rabbitmove = new Animal(9,9);
-      Random rand = new Random();
 
       //while loop to keepr program runnning
       while (snakemove.getx() != rabbitmove.getx() || snakemove.gety() != rabbitmove.gety()){
+
         //snake move
         System.out.println("enter direction for snake");
         direction = input.nextLine();
         snakemove.moveunit(direction);
+
         //rabbit random move
         System.out.println("rabbitmove");
-        n = rand.nextInt(4) + 1;
-        convertDirection = rabbitmove.convertarray(n);
+        convertDirection = rabbitmove.convertarray();
         rabbitmove.moveunit(convertDirection);
 
-        //check if rabbit is close to being eaten
+        //check too see if snake and rabbit are next top each other
         xcheck = Math.abs(snakemove.getx() - rabbitmove.getx());
         ycheck = Math.abs(snakemove.gety() - rabbitmove.gety());
+        koordinatcheck();
 
-          if(xcheck == 1 && ycheck == 1){
-            System.out.println("Rabbit: aargh im getting eaten!");
-          }
        }
    }
+
+   public static void koordinatcheck(){
+     if(xcheck == 1 && ycheck == 1){
+       System.out.println("Rabbit: aargh im getting eaten!");
+     }
+   }
+
 }
