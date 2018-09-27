@@ -4,4 +4,4 @@
 
 blablabla
 
-![alt text](https://docs.google.com/document/d/140TV-9qj5Pbnby2BnVujcuSAZKEX3K3Sbpy1XYZSXw4/edit)
+![alt text](https://github.com/MagiMartin/Horror_Zoo/Use%20Case%20Diagram.jpg)
