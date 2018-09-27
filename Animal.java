@@ -6,7 +6,7 @@ public class Animal{
   private int x;
   private int y;
   private String convertDirection;
-  private static int n;
+  private int n;
 
   //make random object
   Random rand = new Random();
@@ -30,16 +30,16 @@ public class Animal{
   //converter rabbit move fra random int til string
   public String convertarray(){
 
-    n = rand.nextInt(4) + 1;
+    this.n = rand.nextInt(4) + 1;
 
     String[] rabbitstring = {"left","right","up","down"};
-    if (n == 1){
+    if (this.n == 1){
       convertDirection = rabbitstring[0];
-    }else if (n == 2){
+    }else if (this.n == 2){
       convertDirection = rabbitstring[1];
-    }else if (n == 3){
+    }else if (this.n == 3){
       convertDirection = rabbitstring[2];
-    }else if (n == 4){
+    }else if (this.n == 4){
       convertDirection = rabbitstring[3];
     }else{
       System.out.println("error, ");
@@ -51,19 +51,19 @@ public class Animal{
   public void moveunit(String newDirection){
     if (newDirection.equals("left")){
       System.out.print("ryk venstre, ");
-      x = (x - 1 + 10) % 10;
+      this.x = (this.x - 1 + 10) % 10;
       System.out.println("staar i " + x + "," + y);
     }else if (newDirection.equals("down")){
       System.out.print("ryk ned, ");
-      y = (y - 1 + 10) % 10;
+      this.y = (this.y - 1 + 10) % 10;
       System.out.println("staar i " + x + "," + y);
     }else if (newDirection.equals("right")){
       System.out.print("ryk hoejre, ");
-      x = (x + 1 + 10) % 10;
+      this.x = (this.x + 1 + 10) % 10;
       System.out.println("staar i " + x + "," + y);
     }else if (newDirection.equals("up")){
       System.out.print("ryk op, ");
-      y = (y + 1 + 10) % 10;
+      this.y = (this.y + 1 + 10) % 10;
       System.out.println("staar i " + x + "," + y);
     }else{
       System.out.println("error, wrong input");
