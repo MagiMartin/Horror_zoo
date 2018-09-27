@@ -4,4 +4,4 @@
 
 blablabla
 
-![alt text](https://www.researchgate.net/profile/Nelly_Bencomo/publication/215588339/figure/fig1/AS:305983051059210@1449963452643/Conceptual-domain-model.png)
+![alt text](https://docs.google.com/document/d/140TV-9qj5Pbnby2BnVujcuSAZKEX3K3Sbpy1XYZSXw4/edit)
