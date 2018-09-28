@@ -4,9 +4,11 @@
 ## Casual Use Case and Domain Model of Little Animal Horror Zoo
 Groupe Pizza - Martin, Kasper og Mads
 
-Title:	Play Game<br/>
-Primary Actor: Player <br/> 	
-Main Success Scenario:<br/>
+### Title:	Play Game<br/>
+
+### Primary Actor: Player <br/> 	
+
+### Main Success Scenario:<br/>
 Player starts game  <br/>
 Player gives input to Snake to move and game displays position info.<br/>
 Snake moves one square in given direction<br/>
@@ -17,7 +19,7 @@ Snake eats Rabbit<br/>
 Game display victory!<br/> 
 Games ends and data gets sent to developers<br/>     
 
-Alternative Flow (Extensions)
+### Alternative Flow (Extensions)
 
 At all times, if the system fails:
 Show error message 
@@ -47,27 +49,27 @@ Reset game
 
 ## Domain Model
 
-Nouns - (navneord) - Class/attribut:
+### Nouns - (navneord) - Class/attribut:<br/>
 
-Player
-Game
-Snake
-Direction	- attribut 
-Square	- attribut 
-Rabbit
-Victory 	- action
-Error		- action
-Counter	- attribut 
+Player<br/>
+Game<br/>
+Snake<br/>
+Direction	- attribut<br/> 
+Square	- attribut <br/>
+Rabbit<br/>
+Victory 	- action<br/>
+Error		- action<br/>
+Counter	- attribut <br/>
 
 
-Verbs - (Udsagnsord) - Methods: 
+### Verbs - (Udsagnsord) - Methods: <br/>
 
-Starts
-Display
-Gives input
-Talks
-Moves
-Eats
+Starts<br/>
+Display<br/>
+Gives input<br/>
+Talks<br/>
+Moves<br/>
+Eats<br/>
 
 
 ![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/domain%20model.jpg)
