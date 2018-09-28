@@ -4,18 +4,18 @@
 ## Casual Use Case and Domain Model of Little Animal Horror Zoo
 Groupe Pizza - Martin, Kasper og Mads
 
-Title:	Play Game\
-Primary Actor: Player  	
-Main Success Scenario:
-Player starts game  
-Player gives input to Snake to move and game displays position info.\
-Snake moves one square in given direction\
-System moves Rabbit 1 square i random direction\
-Repeat a and b until Snake is beside Rabbit, Game display rabbit talks\
-Player moves Snake to same square as Rabbit\
-Snake eats Rabbit\
-Game display victory!\ 
-Games ends and data gets sent to developers\     
+Title:	Play Game<br/>
+Primary Actor: Player <br/> 	
+Main Success Scenario:<br/>
+Player starts game  <br/>
+Player gives input to Snake to move and game displays position info.<br/>
+Snake moves one square in given direction<br/>
+System moves Rabbit 1 square i random direction<br/>
+Repeat a and b until Snake is beside Rabbit, Game display rabbit talks<br/>
+Player moves Snake to same square as Rabbit<br/>
+Snake eats Rabbit<br/>
+Game display victory!<br/> 
+Games ends and data gets sent to developers<br/>     
 
 Alternative Flow (Extensions)
 
