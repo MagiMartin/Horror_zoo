@@ -5,18 +5,17 @@
 Groupe Pizza - Martin, Kasper og Mads
 
 Title:	Play Game\
-Primary Actor: Player \	
-Main Success Scenario:\
+Primary Actor: Player\	
+Main Success Scenario:
 Player starts game\
-Player gives input to Snake to move and game displays position info. \
+Player gives input to Snake to move and game displays position info.\
 Snake moves one square in given direction\
 System moves Rabbit 1 square i random direction\
-Repeat a and b until Snake is beside Rabbit
-Game display, rabbit talks
-Player moves Snake to same square as Rabbit
-Snake eats Rabbit
-Game display victory! 
-Games ends and data gets sent to developers     
+Repeat a and b until Snake is beside Rabbit, Game display rabbit talks\
+Player moves Snake to same square as Rabbit\
+Snake eats Rabbit\
+Game display victory!\ 
+Games ends and data gets sent to developers\     
 
 Alternative Flow (Extensions)
 
