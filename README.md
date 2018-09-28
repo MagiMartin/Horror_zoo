@@ -1,12 +1,8 @@
 # Horror_zoo
 
-Casual Use Case and Domain Model of 
-Little Animal Horror Zoo
-Groupe Pizza - Martin, Kasper og Mads
 
-Blue 		=	Doesn't exist in code
-Green 	=	Nouns	= 	Class/attribut
-Orange	=	Verbs		= 	Methods
+## Casual Use Case and Domain Model of Little Animal Horror Zoo
+Groupe Pizza - Martin, Kasper og Mads
 
 Title:	Play Game
 Primary Actor: Player 	
@@ -29,6 +25,9 @@ Show error message
 Reset game
 Send crash data to developers
 
+At all times, if incorrect input is recieved
+show error message and go back to input screen.
+
 3A. Rabbit/Snake is next to game area wall and tries to move past the wall:
 Moves Rabbit/Snake to other side of board (Periodiske Randbetingelser)
 
@@ -39,15 +38,15 @@ Reset game
 
 
 
-Use-Case-Diagram
+## Use-Case-Diagram
 
 ![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/Use%20Case%20Diagram.jpg)
 
-Class Model
+## Class Model
 
 ![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/Class%20Model.jpg)
 
-Domain Model:
+## Domain Model
 
 Nouns - (navneord) - Class/attribut:
 
@@ -60,6 +59,7 @@ Rabbit
 Victory 	- action
 Error		- action
 Counter	- attribut 
+
 
 Verbs - (Udsagnsord) - Methods: 
 
