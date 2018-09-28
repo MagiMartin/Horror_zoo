@@ -18,15 +18,15 @@ public class Zoo{
       //while loop to keepr program runnning
       while (snakemove.getx() != rabbitmove.getx() || snakemove.gety() != rabbitmove.gety()){
 
-        //snake move
-        System.out.println("enter direction for snake");
-        direction = input.nextLine();
-        snakemove.moveunit(direction);
-
         //rabbit random move
         System.out.println("rabbitmove");
         convertDirection = rabbitmove.convertarray();
         rabbitmove.moveunit(convertDirection);
+
+        //snake move
+        System.out.println("enter direction for snake");
+        direction = input.nextLine();
+        snakemove.moveunit(direction);
 
         //check too see if snake and rabbit are next top each other
         xcheck = Math.abs(snakemove.getx() - rabbitmove.getx());
@@ -41,5 +41,5 @@ public class Zoo{
        System.out.println("Rabbit: aargh im getting eaten!");
      }
    }
-//hej
+
 }
