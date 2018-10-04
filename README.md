@@ -10,8 +10,8 @@ Groupe Pizza - Martin, Kasper og Mads
 ### Main Success Scenario:<br/>
 1. Player starts game  <br/>
 2. Player gives input to Snake to move, and game displays position info.<br/>
-  1. Snake moves one square in given direction<br/>
-  2. System moves Rabbit 1 square i random direction<br/>
+    1. Snake moves one square in given direction<br/>
+    2. System moves Rabbit 1 square i random direction<br/>
 3. Repeat a and b until Snake is beside Rabbit, Game display rabbit talks<br/>
 4. Player moves Snake to same square as Rabbit<br/>
 5. Snake eats Rabbit<br/>
