@@ -34,11 +34,15 @@ Groupe Pizza - Martin, Kasper og Mads
 
 ## Use-Case-Diagram
 
+The use-case diagram displays the single use-case shown above.
+The primary actor, the player interacts with the system, and goes throught the play game scenario.<br/>
+<br/>
+The supporting actor provdies a service to the system, which would be the developers. They maintain and fix errors if there should be any, they also monitor the usage of their system.<br/>
+<br/>
+The offstage actor would have an interest in the system. In this case it could be the teachers as they wish to see the project.<br/>
+In terms of a product it could be the publisher of the system as they wish for it to have success but they have no direct say in what is being developed.
+
 ![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/Use%20Case%20Diagram.jpg)
-
-## Class Model
-
-![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/Class%20Model.jpg)
 
 ## Domain Model
 
@@ -66,3 +70,7 @@ Eats<br/>
 
 
 ![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/domain%20model.jpg)
+
+## Class Model
+
+![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/Class%20Model.jpg)
