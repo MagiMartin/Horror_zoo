@@ -11,7 +11,7 @@ public class Animal{
   //make random object
   Random rand = new Random();
 
-  //constructor
+  //constructor with (x,y) initial values
   public Animal(int x, int y){
     this.x = x;
     this.y = y;
@@ -27,11 +27,13 @@ public class Animal{
     return y;
   }
 
-  //converter rabbit move fra random int til string
+  //Convert rabbit move input from random int to string
   public String convertarray(){
-
+      
+    //Gives random number between 1-4
     this.n = rand.nextInt(4) + 1;
 
+    //Array with String directions so we can convert the int
     String[] rabbitstring = {"left","right","up","down"};
     if (this.n == 1){
       convertDirection = rabbitstring[0];
@@ -47,29 +49,27 @@ public class Animal{
     return convertDirection;
   }
 
-  //loop til at move unit ud fra string input
+  //If-statements to alter the x and y coordinates of the animals
   public void moveunit(String newDirection){
     if (newDirection.equals("left")){
-      System.out.print("ryk venstre, ");
+      //Use modulus to make floating edge conditions take the least significant digit after division
       this.x = (this.x - 1 + 10) % 10;
-      System.out.println("staar i " + x + "," + y);
+      System.out.println("Move left, i am now located in " + x + "," + y);
     }else if (newDirection.equals("down")){
-      System.out.print("ryk ned, ");
       this.y = (this.y - 1 + 10) % 10;
-      System.out.println("staar i " + x + "," + y);
+      System.out.println("Move down, i am now located in " + x + "," + y);
     }else if (newDirection.equals("right")){
-      System.out.print("ryk hoejre, ");
       this.x = (this.x + 1 + 10) % 10;
-      System.out.println("staar i " + x + "," + y);
+      System.out.println("Move right, i am now located in " + x + "," + y);
     }else if (newDirection.equals("up")){
-      System.out.print("ryk op, ");
       this.y = (this.y + 1 + 10) % 10;
-      System.out.println("staar i " + x + "," + y);
+      System.out.println("Move up, i am now located in " + x + "," + y);
     }else if (newDirection.equals("q")){
-      System.out.println("FARVEL" );
+      System.out.println("Goodbye!" );
       System.exit(0);
     }else{
       System.out.println("error, wrong input");
+      System.out.println("");
     }
   }
 }
