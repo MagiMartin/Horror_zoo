@@ -28,7 +28,7 @@ Groupe Pizza - Martin, Kasper og Mads
 * At all times, if incorrect input is recieved:<br/> 
     * Show error message and go back to input screen.<br/> 
 
-3a. If the rabbit or the snake is next to a game area wall and tries to move past the wall:<br/> 
+3. If the rabbit or the snake is next to a game area wall and tries to move past the wall:<br/> 
     1. the game will move the snake or rabbit to the other side of the board (Floating edges)
 
 
