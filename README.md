@@ -76,4 +76,15 @@ We arranged the words into classes and attributes. And there were drawn ascociat
 
 ## Class Model
 
+Now we take all of the above and try to envision what our software classes would look like. Fill in attributes and methods.
+And show some initial types and whether they have been encapsulated or not.
+
 ![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/Class%20Model.jpg)
+
+## Thoughts
+
+There might be a problem with checking if the animals are close to each other, when they are standing next to a wall in opposite ends.<br/>
+<br/>
+There could be a counter that displats at the end of the game how many moves the player used.<br/>
+<br/>
+We could have made different use cases for each animal and sepperated a move use case from the main scenario.
