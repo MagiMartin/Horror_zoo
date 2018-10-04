@@ -46,6 +46,9 @@ In terms of a product it could be the publisher of the system as they wish for i
 
 ## Domain Model
 
+The domain model display how the system objects are related in the real world, as we concieve it. (Conceptrual model)
+We used the method of collecting all nouns and verbs from our use case as shown below.<br/>
+
 ### Nouns - (navneord) - Class/attribut:<br/>
 
 Player<br/>
@@ -56,7 +59,6 @@ Square	- attribut <br/>
 Rabbit<br/>
 Victory 	- action<br/>
 Error		- action<br/>
-Counter	- attribut <br/>
 
 
 ### Verbs - (Udsagnsord) - Methods: <br/>
@@ -68,6 +70,7 @@ Talks<br/>
 Moves<br/>
 Eats<br/>
 
+We arranged the words into classes and attributes. And there were drawn ascociations between these classes.
 
 ![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/domain%20model.jpg)
 
