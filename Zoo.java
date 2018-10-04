@@ -14,32 +14,27 @@ public class Zoo{
       Scanner input = new Scanner(System.in);
       Animal snakemove = new Animal(0,0);
       Animal rabbitmove = new Animal(9,9);
+      
 
       //while loop to keepr program runnning
-      while (snakemove.getx() != rabbitmove.getx() || snakemove.gety() != rabbitmove.gety()){
+      while (snakemove.getx() != rabbitmove.getx() | snakemove.gety() != rabbitmove.gety()){
 
-        //rabbit random move
-        System.out.println("rabbitmove");
-        convertDirection = rabbitmove.convertarray();
-        rabbitmove.moveunit(convertDirection);
-
-        //snake move
+        xcheck = Math.abs(snakemove.getx() - rabbitmove.getx());
+        ycheck = Math.abs(snakemove.gety() - rabbitmove.gety());
+        
+       //snake move
         System.out.println("enter direction for snake");
         direction = input.nextLine();
         snakemove.moveunit(direction);
-
-        //check too see if snake and rabbit are next top each other
-        xcheck = Math.abs(snakemove.getx() - rabbitmove.getx());
-        ycheck = Math.abs(snakemove.gety() - rabbitmove.gety());
-        koordinatcheck();
-
-       }
+       
+        //rabbit random move 
+        if (xcheck != 1 && ycheck != 1){
+        System.out.println("rabbitmove");
+        convertDirection = rabbitmove.convertarray();
+        rabbitmove.moveunit(convertDirection);
+        }else{
+        System.out.println("Rabbit: aargh im getting eaten!");
+        }
+      }
    }
-
-   public static void koordinatcheck(){
-     if(xcheck == 1 && ycheck == 1){
-       System.out.println("Rabbit: aargh im getting eaten!");
-     }
-   }
-
 }

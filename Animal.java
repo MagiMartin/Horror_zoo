@@ -65,6 +65,9 @@ public class Animal{
       System.out.print("ryk op, ");
       this.y = (this.y + 1 + 10) % 10;
       System.out.println("staar i " + x + "," + y);
+    }else if (newDirection.equals("q")){
+      System.out.println("FARVEL" );
+      System.exit(0);
     }else{
       System.out.println("error, wrong input");
     }
