@@ -12,8 +12,8 @@ public class Zoo{
   public static void main(String[] args){
       //Create objects
       Scanner input = new Scanner(System.in);
-      Animal snakemove = new Animal(2,3);
-      Animal rabbitmove = new Animal(2,5);
+      Animal snakemove = new Animal(2,2);
+      Animal rabbitmove = new Animal(8,8);
       
       //Welcome Message
       System.out.println("Welcome to the Horror Zoo");
@@ -37,7 +37,7 @@ public class Zoo{
                  
         //Rabbit random move (Computer)
         //Rabbit only moves if the snake is not within 1 square, otherwise it is stunned by fear           
-       if (Math.min(xcheck, (10-xcheck)) == 1 || Math.min(ycheck, (10-ycheck)) == 1){
+       if ((Math.min(xcheck, (10-xcheck)) == 1 && Math.min(ycheck, (10-ycheck)) == 0) || (Math.min(xcheck, (10-xcheck)) == 0 && Math.min(ycheck, (10-ycheck)) == 1)){
          System.out.println("Rabbit: aargh im getting eaten!");
        }else if(snakemove.getx() == rabbitmove.getx() & snakemove.gety() == rabbitmove.gety()){
          System.out.println("UGH IM DEADED!");
