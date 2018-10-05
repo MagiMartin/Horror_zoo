@@ -5,7 +5,7 @@ public class Animal{
   //Declare variables
   private int x;
   private int y;
-  private int n;
+  private int random_int;
 
   //make random object
   Random rand = new Random();
@@ -29,10 +29,10 @@ public class Animal{
   //Convert rabbit move input from random int to string
   public String convertarray(){
     //Gives random number between 0-3
-    this.n = rand.nextInt(4);
+    this.random_int = rand.nextInt(4);
     //Array with String directions so we can convert the int
     String[] rabbitstring = {"left","right","up","down"};
-    return rabbitstring[n];
+    return rabbitstring[random_int];
   }
 
   //If-statements to alter the x and y coordinates of the animals
