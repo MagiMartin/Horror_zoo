@@ -79,7 +79,7 @@ We arranged the words into classes and attributes. And there were drawn ascociat
 Now we take all of the above and try to envision what our software classes would look like. Fill in attributes and methods.
 And show some initial types and whether they have been encapsulated or not.
 
-![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/Class%20Model.jpg)
+![alt text](https://raw.githubusercontent.com/MagiMartin/Horror_Zoo/master/Class%20Model.jpg) 
 
 ## Thoughts
 
